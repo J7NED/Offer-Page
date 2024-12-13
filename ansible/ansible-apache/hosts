@@ -1,2 +1,2 @@
 [webservers]
-192.168.1.150 ansible_ssh_user=lab ansible_ssh_pass=changeme
+10.0.2.15 ansible_ssh_user=lab ansible_ssh_pass=changeme
