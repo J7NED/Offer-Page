@@ -15,7 +15,7 @@
     - name: Deploy HTML Page
       copy:
         src: /var/lib/jenkins/workspace/ansible-jenkins-pipeline/index.html
-        dest: /var/www/htm
+        dest: /var/www/html
 
 
   handlers:
