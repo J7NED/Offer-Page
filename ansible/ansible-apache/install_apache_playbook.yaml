@@ -10,7 +10,13 @@
     - name: ENABLED MOD_REWRITE
       apache2_module: name=rewrite state=present
       notify:
+
         - RESTART APACHE2
+    - name: Deploy HTML Page
+      copy:
+        src: /var/lib/jenkins/workspace/ansible-jenkins-pipeline/index.html
+        dest: /var/www/htm
+
 
   handlers:
     - name: RESTART APACHE2
