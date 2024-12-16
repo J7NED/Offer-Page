@@ -14,7 +14,7 @@
         - RESTART APACHE2
     - name: Deploy HTML Page
       copy:
-        src: /var/lib/jenkins/workspace/'ansible pipeline'/templates/index.html
+        src: /var/lib/jenkins/workspace/ansible pipeline/templates/index.html
         dest: /var/www/html
 
 
