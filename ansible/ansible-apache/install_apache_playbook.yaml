@@ -16,10 +16,11 @@
       copy:
         src: /var/lib/jenkins/workspace/ansible pipeline/templates/index.html
         dest: /var/www/html
+   
     - name: Deploy CSS Files
       copy:
         src: /var/lib/jenkins/workspace/ansible pipeline/static/styles.css
-        dest: /var/www/html/css/
+        dest: /var/www/html/css
 
   handlers:
     - name: RESTART APACHE2
